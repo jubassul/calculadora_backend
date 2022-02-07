@@ -10,8 +10,6 @@ inquirer
     {
       name: "operation",
       message: "Qual Operação Você quer fazer?",
-      
-
     },
     {
       name: "n1",
@@ -27,16 +25,39 @@ inquirer
     let n2 = parseFloat(answer.n2);
     switch (answer.operation) {
       case "soma":
-        console.log(operationSum(n1, n2));
+        console.log(
+          `A operação entre ${n1} e ${n2} é soma e o resultado é ${operationSum(
+            n1,
+            n2
+          )}`
+        );
         break;
       case "subtracao":
-        console.log(operationSub(n1, n2));
+        console.log(
+          `A operação entre ${n1} e ${n2} é subtração e o resultado é ${operationSub(
+            n1,
+            n2
+          )}`
+        );
+
         break;
       case "divisao":
-        console.log(operationDiv(n1, n2));
+        console.log(
+          `A operação entre ${n1} e ${n2} é divisão e o resultado é ${operationDiv(
+            n1,
+            n2
+          )}`
+        );
+
         break;
       case "multiplicacao":
-        console.log(operationMulti(n1, n2));
+        console.log(
+          `A operação entre ${n1} e ${n2} é multiplicação e o resultado é ${operationMulti(
+            n1,
+            n2
+          )}`
+        );
+
         break;
     }
   })
